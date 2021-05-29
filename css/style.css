@@ -1,0 +1,171 @@
+
+/* ********************* */
+/* font */
+/* ********************* */
+@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
+
+
+/* ********************* */
+/* variable */
+/* ********************* */
+
+:root {
+   /* orange primary color */
+  --clr-orange-1: #e67e22;
+  --clr-orange-2: #ffb228; 
+  --clr-orange-3: #f45905;
+  --clr-orange-4: #c06014;
+  --clr-orange-5: #AA8F66;
+  --clr-orange-6: #ED9B40;
+  --clr-orange-7: #f15025;
+  --clr-orange-7: #d89156;
+  /* yellow primary color */
+  --clr-yellow-1: #FFFF82;
+  --clr-yellow-2: #ffd0a8;
+  --clr-yellow-3: #f7ea00;
+  /* blue primary color */
+  --clr-blue-1: #88d5e9;
+  --clr-blue-2: #6cc3d8;
+  --clr-blue-3: #1687a7;
+  --clr-blue-4: #04009a;
+  /* green primary color */
+  --clr-green-1: #4caf50;
+  --clr-green-2: #6baa75;
+  /* white primary color */
+  --clr-white-1: #fafafa;
+  --clr-white-2: #fbf9fa;
+  --clr-white-3: #f4f4f4;
+  --clr-white-4: #fff;
+  --clr-white-5: #faf3e0;
+  --clr-white-6: #f8f5f1;
+  --clr-white-7: #fdf1d6;
+  --clr-white-7: #FFFF82;
+  /* black primary color */
+  --clr-black-1: #373331;
+  --clr-black-2: #000;
+  --clr-black-3: #333;
+  --clr-black-4: #63686e;
+  --clr-black-5: #272D2D;
+  --clr-black-6: #545454;
+  --clr-black-7: #69747c;
+  /* red primary color */
+  --clr-red-1: #ce1212;
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --ff-primary-1: 'charm', cursive;
+  --ff-primary-2: 'calibri', sans-serif;
+  --ff-primary-3: Arial, Helvetica, sans-serif;
+  --transition-1: all 0.5s linear;
+  --transition-2: all 1.5s ease;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+  --lineHeight: 2rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  /* Social media colors */
+  --clr-faceBook: #3b5998;
+  --clr-twitter: #00aced;
+  --clr-instagram: #517fa4;
+  --clr-googlePlus: #dd4b39;
+  --clr-linkedIn: #0e76a8;
+}
+
+/* ********************* */
+/* Global Styles */
+/* ********************* */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* ********************* */
+/* page */
+/* ********************* */
+
+.navbar-header{
+  background: var(--clr-black-6);
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+  border-bottom: .3rem solid var(--clr-green-2);
+}
+
+.navbar-btn{
+  align-self: center;
+  border: 3px solid var(--clr-green-2);
+  cursor: pointer ;
+}
+
+.bar-1, .bar-2, .bar-3{
+  width: 30px;
+  height: 5px;
+  margin: .5rem;
+  background: var(--clr-green-2);
+  transition: var(--transition-2 );
+}
+
+.navbar-links{
+  list-style-type: none;
+  transition: var(--transition-2);
+  /* hidden */
+  height: 0;
+  overflow: hidden;
+} 
+
+/* additional-class */
+.navbar-collapse{
+  height: 220px;
+}
+
+/* additional-class */
+.change .bar-1{
+  transform: rotate(-45deg) translate(-10px, 10px);
+}
+
+/* additional-class */
+.change .bar-2{
+  opacity: 0;
+}
+
+/* additional-class */
+.change .bar-3{
+  transform: rotate(45deg) translate(-7px, -8px);
+}
+
+
+
+.navbar-single-link{
+  display: block;
+  background: var(--clr-black-7);
+  padding: 1rem;
+  font-size: 1.3rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--clr-green-2);
+  transition: var(--transition-1);
+  cursor: pointer;
+}
+
+.navbar-single-link:hover{
+  padding-left: 1.5rem;
+  border-left: 5px solid var(--clr-green-1);
+  background: var(--clr-black-6);
+}
+
+.navbar-single-link i{
+  margin-right: .5rem;
+}
+
+.header{
+  min-height: calc(100vh - 91.8px);
+  background: url('../img/header-bcg.jpeg') center/cover no-repeat;
+}
+
